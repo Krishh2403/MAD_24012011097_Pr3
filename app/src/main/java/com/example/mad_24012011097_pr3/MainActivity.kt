@@ -4,7 +4,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.AlarmClock
-import android.provider.CallLog
 import android.provider.MediaStore
 import android.widget.Button
 import android.widget.EditText
@@ -31,7 +30,6 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btn_calllog).setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.type = CallLog.Calls.CONTENT_TYPE
             startActivity(intent)
         }
 
