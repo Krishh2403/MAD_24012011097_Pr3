@@ -87,12 +87,14 @@ Implicit Intent — Dial a Number
 val i = Intent(Intent.ACTION_DIAL)
 i.setData("tel:$number".toUri())
 startActivity(i)
+---
 Implicit Intent — Open Gallery
 Intent(Intent.ACTION_VIEW)
     .setType("image/*")
     .apply {
         startActivity(this)
     }
+---
 Explicit Intent — Open Login Activity
 Intent(
     this@MainActivity,
@@ -100,7 +102,8 @@ Intent(
 ).also {
     startActivity(it)
 }
-▶️ How to Run
+---
+## ▶️ How to Run
 Open the project in Android Studio.
 Let Gradle sync complete.
 Run the application on an emulator or physical device.
@@ -114,7 +117,7 @@ Alarm → Opens the Clock app's Alarm screen
 Login → Navigates to the custom Login screen
 
 ⚠️ Note: Some actions such as Camera, Gallery, or Call may require runtime permissions depending on the Android version and device.
-
+---
 📸 Screenshots
 <table> <tr> <th>Main Menu</th> <th>Browser</th> <th>Dialer</th> <th>Call Log</th> </tr> <tr> <td align="center"><img src="screenshots/ss1.png" width="200"></td> <td align="center"><img src="screenshots/ss2.png" width="200"></td> <td align="center"><img src="screenshots/ss3.png" width="200"></td> <td align="center"><img src="screenshots/ss4.png" width="200"></td> </tr> <tr> <th>Gallery</th> <th>Camera</th> <th>Alarms</th> <th>Login</th> </tr> <tr> <td align="center"><img src="screenshots/ss5.png" width="200"></td> <td align="center"><img src="screenshots/ss6.png" width="200"></td> <td align="center"><img src="screenshots/ss7.png" width="200"></td> <td align="center"><img src="screenshots/ss8.png" width="200"></td> </tr> </table>
 ---
