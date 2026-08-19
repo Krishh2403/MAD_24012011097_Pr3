@@ -117,30 +117,38 @@ startActivity(intent)
 ```
 
 ▶️ How to Run
-
 Open the project in Android Studio.
+
 Let Gradle sync complete.
-Build and run the app on an emulator or a physical device.
+
+Run on an emulator or physical device (Pixel 8 / API 30+ recommended).
+
 Tap each button and verify the corresponding app/screen opens:
+
 Browse → Opens the entered URL in a browser
+
 Call → Opens the Dialer with the entered number
+
 Call Log → Opens the device's Call Log
+
 Gallery → Opens the Gallery app
+
 Camera → Opens the Camera app
+
 Alarm → Opens the Clock app's Alarm screen
+
 Login → Navigates to the custom Login screen
-Note: Some actions (Camera, Gallery, Call) may require runtime permissions depending on Android version and device. Handle permissions in code where required.
+
+⚠️ Note: Some actions (Call, Camera, Gallery) may require runtime permissions depending on the Android version.
 
 📸 Screenshots
-Include screenshots in the screenshots/ directory. Example:
 
-screenshots/ss1.png — Main Menu
-screenshots/ss2.png — Browser
-screenshots/ss3.png — Dialer
-screenshots/ss4.png — Call Log
-You can embed images in this README using Markdown:
 
-![Main Menu](screenshots/ss1.png) ![Browser](screenshots/ss2.png)
+| Main Menu | Browser | Dialer | Call Log |
+| :---: | :---: | :---: | :---: |
+| ![Main Menu](screenshots/ss1.png) | ![Browser](screenshots/ss2.png) | ![Dialer](screenshots/ss3.png) | ![Call Log](screenshots/ss4.png) |
+| **Gallery** | **Camera** | **Alarms** | **Login** |
+| ![Gallery](screenshots/ss5.png) | ![Camera](screenshots/ss6.png) | ![Alarms](screenshots/ss7.png) | ![Login](screenshots/ss8.png) |
 
 👤 Submitted By
 Name: Krish Patel
